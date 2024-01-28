@@ -164,3 +164,18 @@
 #     u0 = u1
 #     u1 = u
     
+# n = int(input("Entrer le nombre : "))
+# est_premier = True
+
+# if n < 2:
+#     est_premier = False
+# else:
+#     for i in range(2, int(n/2) + 1):
+#         if n % i == 0:
+#             est_premier = False
+#             break
+
+# if est_premier:
+#     print(f"Le nombre {n} est un nombre premier.")
+# else:
+#     print(f"Le nombre {n} n'est pas un nombre premier.")
