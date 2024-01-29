@@ -179,3 +179,9 @@
 #     print(f"Le nombre {n} est un nombre premier.")
 # else:
 #     print(f"Le nombre {n} n'est pas un nombre premier.")
+
+n = int(input("Entrer le nombre d'equipe : "))
+for i in range (1 , n + 1):
+    for j in range (1 , n + 1):
+        if i != j :
+            print(i,"vs",j)
