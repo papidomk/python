@@ -180,8 +180,24 @@
 # else:
 #     print(f"Le nombre {n} n'est pas un nombre premier.")
 
-n = int(input("Entrer le nombre d'equipe : "))
-for i in range (1 , n + 1):
-    for j in range (1 , n + 1):
-        if i != j :
-            print(i,"vs",j)
+# n = int(input("Entrer le nombre d'equipe : "))
+# for i in range (1 , n + 1):
+#     for j in range (1 , n + 1):
+#         if i != j :
+#             print(i,"vs",j)
+
+import random
+n = random.randint(1,30)
+num = 5
+while num > 0 :
+    num -= 1
+    valeur = int(input("trouver le nombre qui se trouve entre 1 et 30 : "))
+    if valeur < n :
+        print("c'est plus !")
+    elif valeur > n :
+        print("c'est moin !")
+    else :
+        print(valeur,"est egal a",n,"vous avez trouver")
+        break
+if num == 0 and valeur != n :
+    print("vous avez pas trouver dommage")
