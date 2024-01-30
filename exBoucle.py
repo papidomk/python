@@ -186,18 +186,42 @@
 #         if i != j :
 #             print(i,"vs",j)
 
-import random
-n = random.randint(1,30)
-num = 5
-while num > 0 :
-    num -= 1
-    valeur = int(input("trouver le nombre qui se trouve entre 1 et 30 : "))
-    if valeur < n :
-        print("c'est plus !")
-    elif valeur > n :
-        print("c'est moin !")
-    else :
-        print(valeur,"est egal a",n,"vous avez trouver")
-        break
-if num == 0 and valeur != n :
-    print("vous avez pas trouver dommage")
+# import random
+# n = random.randint(1,30)
+# num = 5
+# while num > 0 :
+#     num -= 1
+#     valeur = int(input("trouver le nombre qui se trouve entre 1 et 30 : "))
+#     if valeur < n :
+#         print("c'est plus !")
+#     elif valeur > n :
+#         print("c'est moin !")
+#     else :
+#         print("vous avez trouver bien jouer")
+#         break
+# if num == 0 and valeur != n :
+#     print("vous avez pas trouver dommage")
+
+# while quitter_continuer :
+#     ope = input("Entrer l'operation que vous voulez : ")
+#     while ope != "%" or ope != "+" or ope != "-" or ope != "/" or ope != "*" or ope != "**":
+#         ope = input("Entrer l'operation que vous voulez :")
+#     n1 = int(input("Entrer le premier nombre :"))
+#     n2 = int(input("Entrer le deuxieme nombre :"))
+#     if ope == "+" :
+#         print("la somme des 2 est :",n1 + n2)
+#     elif ope == "/" and n1 != 0 and n2 != 0 :
+#         print("la division est :",n1/n2)
+#     elif ope == "*" :
+#         print("le resultat de la miltiplication est :",n1*n2)
+#     elif ope == "-" :
+#         print("n1 - n2 =",n1 - n2)
+#     elif ope == "**" :
+#         print("n1^n2 =",n1 ** n2)
+#     else :
+#         print("le reste de n1 / n2 :",n1 % n2)
+#     quitter_continuer = input("continuer ou arreter : ")
+#     if quitter_continuer == "continuer" or quitter_continuer == "Continuer":
+#         continue
+#     else : 
+#         break
