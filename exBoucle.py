@@ -164,7 +164,7 @@
 #     u0 = u1
 #     u1 = u
     
-    
+
 # n = int(input("Entrer le nombre : "))
 # est_premier = True
 
@@ -211,3 +211,23 @@
 #     nombre = nombre // 10
 #     nbr = nbr + 1
 # print("Le nombre de chiffre est :",nbr)
+
+
+# nombre = int(input("Entrer votre nombre : "))
+# inverse = 0
+# while nombre != 0 :
+#     inverse = (inverse * 10) + (nombre % 10)
+#     nombre = nombre // 10
+# print("l'inverse de votre nombre est :",inverse)
+
+
+nombre = int(input("Entrer votre nombre : "))
+nombre_de_base = nombre
+inverse = 0
+while nombre != 0 :
+     inverse = (inverse * 10) + (nombre % 10)
+     nombre = nombre // 10
+if inverse == nombre_de_base :
+    print(nombre_de_base,"est un palindrome")
+else :
+    print(nombre_de_base,"N'est pas un palindrome")
