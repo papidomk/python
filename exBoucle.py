@@ -221,13 +221,24 @@
 # print("l'inverse de votre nombre est :",inverse)
 
 
+# nombre = int(input("Entrer votre nombre : "))
+# nombre_de_base = nombre
+# inverse = 0
+# while nombre != 0 :
+#      inverse = (inverse * 10) + (nombre % 10)
+#      nombre = nombre // 10
+# if inverse == nombre_de_base :
+#     print(nombre_de_base,"est un palindrome")
+# else :
+#     print(nombre_de_base,"N'est pas un palindrome")
+
+
 nombre = int(input("Entrer votre nombre : "))
-nombre_de_base = nombre
-inverse = 0
-while nombre != 0 :
-     inverse = (inverse * 10) + (nombre % 10)
-     nombre = nombre // 10
-if inverse == nombre_de_base :
-    print(nombre_de_base,"est un palindrome")
+variable = 0
+for i in range (1 , nombre):
+    if nombre % i == 0 :
+        variable = variable + i
+if variable == nombre :
+    print(nombre,"Est parfait")
 else :
-    print(nombre_de_base,"N'est pas un palindrome")
+    print(nombre,"N'est pas parfait")
