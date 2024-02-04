@@ -1,14 +1,16 @@
 import random
-personne = input("Choisissez Pierre Feuille ou Cisaux : ")
-pierre = "Pierre"
-cisaux = "cisaux"
-feuille = "Feuille"
+
 score = 0
 score_ordi = 0
-while personne != pierre and personne != feuille and personne != cisaux :
-    personne = input("La reponse doit etre Pierre , Feuille ou Cisaux : ")
-ordi = random.randint(1 , 3)
-while personne == pierre or personne == cisaux or personne == feuille :
+
+while True :
+    ordi = random.randint(1 , 3)
+    pierre = "Pierre"
+    cisaux = "Cisaux"
+    feuille = "Feuille"
+    personne = input("Choisissez Pierre Feuille ou Cisaux : ")
+    while personne != pierre and personne != feuille and personne != cisaux :
+        personne = input("La reponse doit etre Pierre , Feuille ou Cisaux : ")
     if ordi == 1 :
         ordi = pierre 
         if personne == ordi :
